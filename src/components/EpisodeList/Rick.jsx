@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchEpisodes, fetchCharacters } from "../api";
+import { fetchEpisodes, fetchCharacters } from "../../api";
 import "./Rick.css";
 
 export const Rick = () => {
@@ -52,7 +52,7 @@ export const Rick = () => {
             <h3>{episode.episode + ":" + episode.name}</h3>
             <div className="characters-container">
               {isLoadingByEpisodes[episode.id] && (
-                <div className="loading">Загрузка...</div>
+                <div className="loading">Loading...</div>
               )}
               {charactersByEpisodes[episode.id]?.map((character) => {
                 return (
@@ -65,9 +65,9 @@ export const Rick = () => {
                     </div>
                     <div className="character-right">
                       <h3>{character.name}</h3>
-                      <div>Вид: {character.species}</div>
-                      <div>Пол: {character.gender}</div>
-                      <div>Локация: {character.location.name}</div>
+                      <div>Species: {character.species}</div>
+                      <div>Gender: {character.gender}</div>
+                      <div>Location: {character.location.name}</div>
                     </div>
                   </div>
                 );

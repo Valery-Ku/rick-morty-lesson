@@ -1,0 +1,63 @@
+.location-list-wrapper {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px 40px;
+}
+
+.list-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #a2d5c6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+.locations-dropdown {
+  background-color: #3e5871;
+  border-radius: 15px;
+  padding: 15px 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.locations-dropdown:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.locations-list {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.location {
+  background-color: #526d82;
+  color: #dde6ed;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-size: clamp(14px, 2vw, 16px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-left: 5px solid #a2d5c6;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 10px;;
+}
+
+.location:hover {
+  background-color: #4a6278;
+  box-shadow: 0 4px 12px rgba(162, 213, 198, 0.3);
+}
+
+.location > .collapse-title {
+  font-weight: 600;
+  color: #a2d5c6;
+  cursor: default;
+}

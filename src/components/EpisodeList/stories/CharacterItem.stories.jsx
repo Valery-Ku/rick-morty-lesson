@@ -1,4 +1,4 @@
-import { CharacterItem } from "../components/presentational/CharacterItem";
+import { CharacterItem } from "../presentational/CharacterItem";
 
 export default {
   title: "CharacterItem",

@@ -1,4 +1,4 @@
-import { Collapse } from "../components/presentational/Collapse";
+import { Collapse } from "../presentational/Collapse";
 
 export default {
   title: "Collapse",

@@ -16,3 +16,10 @@ export const fetchCharacters = async (ids) => {
 const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
+
+export const fetchLocations = async (ids) => {
+  await sleep(1000);
+  return fetch(
+    `https://rickandmortyapi.com/api/location/${ids.join(",")}`
+  ).then((response) => response.json());
+};

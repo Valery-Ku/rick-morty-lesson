@@ -17,9 +17,9 @@ export const CharacterItem = ({ character }) => {
       </div>
       <div className="character-right">
         <h3>{character.name}</h3>
-        <div>Вид: {character.species}</div>
-        <div>Пол: {character.gender}</div>
-        <div>Локация: {character.location.name}</div>
+        <div>Species: {character.species}</div>
+        <div>Gender: {character.gender}</div>
+        <div>Location: {character.location.name}</div>
       </div>
     </div>
   );

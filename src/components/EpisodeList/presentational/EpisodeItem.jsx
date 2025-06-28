@@ -6,16 +6,16 @@ export const EpisodeItem = ({ episode }) => {
 
   const ids = useMemo(
     () =>
-      episode.characters.map((character) => {
-        const id = character.split("/").pop();
-        return id;
-      }),
+      episode.characters.map((character) => character.split("/").pop()),
     [episode?.characters]
   );
 
   return (
-    <div className="episode" onClick={() => setOpen(true)}>
-      <h3>{episode.episode + ":" + episode.name}</h3>
+    <div
+      className="episode"
+      onClick={() => setOpen((prev) => !prev)}
+    >
+      <h3>{episode.episode + ": " + episode.name}</h3>
       {open && <CharacterList ids={ids} />}
     </div>
   );

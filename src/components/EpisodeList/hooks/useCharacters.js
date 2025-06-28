@@ -1,4 +1,4 @@
-import { fetchCharacters } from "../../api";
+import { fetchCharacters } from "../../../api";
 import { useState, useEffect } from "react";
 
 export const useCharacters = (ids) => {
